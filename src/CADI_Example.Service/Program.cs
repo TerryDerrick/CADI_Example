@@ -31,10 +31,14 @@
                 using var host = CreateHostBuilder(args).Build();
                 await host.RunAsync().ConfigureAwait(false);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
+                Log.Fatal(ex, "Application failed to execute successfully, refer to exception.");
                 throw;
+            }
+            finally
+            {
+                Log.CloseAndFlush();
             }
         }
 
