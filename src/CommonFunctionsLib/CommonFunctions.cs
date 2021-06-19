@@ -3,7 +3,7 @@
     using System;
 
     /// <inheritdoc/>
-    public class CommonFunctions
+    public class CommonFunctions : ICommonFunctions
     {
     }
 }
