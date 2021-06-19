@@ -4,6 +4,154 @@
     "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Service\\CADI_Example.Service.csproj": {}
   },
   "projects": {
+    "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Application\\CADI_Example.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Application\\CADI_Example.Application.csproj",
+        "projectName": "CADI_Example.Application",
+        "projectPath": "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Application\\CADI_Example.Application.csproj",
+        "packagesPath": "C:\\Users\\Fox\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Fox\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/bluestardirectqld/_packaging/directqld/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Domain\\CADI_Example.Domain.csproj": {
+                "projectPath": "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Domain\\CADI_Example.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.118, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Domain\\CADI_Example.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Domain\\CADI_Example.Domain.csproj",
+        "projectName": "CADI_Example.Domain",
+        "projectPath": "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Domain\\CADI_Example.Domain.csproj",
+        "packagesPath": "C:\\Users\\Fox\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Fox\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/bluestardirectqld/_packaging/directqld/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.118, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Service\\CADI_Example.Service.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -31,7 +179,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Application\\CADI_Example.Application.csproj": {
+                "projectPath": "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Application\\CADI_Example.Application.csproj"
+              },
+              "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Domain\\CADI_Example.Domain.csproj": {
+                "projectPath": "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Domain\\CADI_Example.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

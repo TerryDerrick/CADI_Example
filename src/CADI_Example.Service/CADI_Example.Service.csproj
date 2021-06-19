@@ -22,4 +22,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CADI_Example.Application\CADI_Example.Application.csproj" />
+    <ProjectReference Include="..\CADI_Example.Domain\CADI_Example.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

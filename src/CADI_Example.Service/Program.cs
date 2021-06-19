@@ -2,6 +2,8 @@
 {
     using System;
     using System.Threading.Tasks;
+    using CADI_Example.Application;
+    using CADI_Example.Domain.Model;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
@@ -73,7 +75,8 @@
                 .UseConsoleLifetime()
                 .ConfigureServices((ctx, svc) =>
                 {
-                    ;
+                     svc.Configure<CommonOptions>(ctx.Configuration.GetSection("CommonOptions"));
+                     svc.AddHostedService<ApplicationWorker>();
                 });
     }
 }

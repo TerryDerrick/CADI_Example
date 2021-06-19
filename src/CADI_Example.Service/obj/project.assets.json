@@ -1236,6 +1236,32 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "CADI_Example.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "CADI_Example.Domain": "1.0.0",
+          "Microsoft.Extensions.Hosting": "5.0.0",
+          "Microsoft.Extensions.Hosting.Abstractions": "5.0.0",
+          "Microsoft.Extensions.Options": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CADI_Example.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CADI_Example.Application.dll": {}
+        }
+      },
+      "CADI_Example.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/CADI_Example.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CADI_Example.Domain.dll": {}
+        }
       }
     }
   },
@@ -4507,10 +4533,22 @@
         "system.xml.xdocument.4.0.11.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "CADI_Example.Application/1.0.0": {
+      "type": "project",
+      "path": "../CADI_Example.Application/CADI_Example.Application.csproj",
+      "msbuildProject": "../CADI_Example.Application/CADI_Example.Application.csproj"
+    },
+    "CADI_Example.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CADI_Example.Domain/CADI_Example.Domain.csproj",
+      "msbuildProject": "../CADI_Example.Domain/CADI_Example.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "CADI_Example.Application >= 1.0.0",
+      "CADI_Example.Domain >= 1.0.0",
       "Microsoft.Extensions.Hosting >= 5.0.0",
       "Microsoft.Extensions.Hosting.Abstractions >= 5.0.0",
       "Microsoft.Extensions.Hosting.WindowsServices >= 5.0.1",
@@ -4555,7 +4593,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Application\\CADI_Example.Application.csproj": {
+              "projectPath": "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Application\\CADI_Example.Application.csproj"
+            },
+            "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Domain\\CADI_Example.Domain.csproj": {
+              "projectPath": "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Domain\\CADI_Example.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
