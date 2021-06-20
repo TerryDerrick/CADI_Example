@@ -4,6 +4,7 @@
     using System.Threading;
     using System.Threading.Tasks;
     using CADI_Example.Domain.Model;
+    using CommonFunctionsLib;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
     using Microsoft.Extensions.Hosting.Internal;
@@ -18,6 +19,7 @@
         private readonly CommonOptions commonOptions;
         private readonly IServiceScope serviceScope;
         private readonly IHostApplicationLifetime applicationLifetime;
+        private readonly ICommonFunctions commonFunctions;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ApplicationWorker"/> class.
@@ -28,6 +30,15 @@
         {
             // Create Dependency Injection Scope
             serviceScope = (serviceScopeFactory ?? throw new ArgumentNullException(nameof(serviceScopeFactory))).CreateScope();
+
+            if (options == null)
+            {
+                throw new ArgumentNullException(nameof(options));
+            }
+
+            commonOptions = options.Value;
+
+            commonFunctions = serviceScope.ServiceProvider.GetRequiredService<ICommonFunctions>();
 
         }
 

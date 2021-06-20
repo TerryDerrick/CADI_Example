@@ -1242,6 +1242,7 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "CADI_Example.Domain": "1.0.0",
+          "CommonFunctionsLib": "1.0.0",
           "Microsoft.Extensions.Hosting": "5.0.0",
           "Microsoft.Extensions.Hosting.Abstractions": "5.0.0",
           "Microsoft.Extensions.Options": "5.0.0"

@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CADI_Example.Domain\CADI_Example.Domain.csproj" />
+    <ProjectReference Include="..\CommonFunctionsLib\CommonFunctionsLib.csproj" />
   </ItemGroup>
 
 </Project>
