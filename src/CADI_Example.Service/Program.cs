@@ -4,6 +4,7 @@
     using System.Threading.Tasks;
     using CADI_Example.Application;
     using CADI_Example.Domain.Model;
+    using CADI_Example.Infrastructure;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
@@ -57,6 +58,7 @@
                 var env = ctx.HostingEnvironment;
 
                 cfg.SetBasePath(ctx.HostingEnvironment.ContentRootPath)
+                        // not using local json just yet
                         // .AddJsonFile("appsettings.Local.json", true, true)
                         ;
 
@@ -76,6 +78,7 @@
                 .ConfigureServices((ctx, svc) =>
                 {
                      svc.Configure<CommonOptions>(ctx.Configuration.GetSection("CommonOptions"));
+                     svc.AddInfrastructureServices(ctx.Configuration);
                      svc.AddHostedService<ApplicationWorker>();
                 });
     }

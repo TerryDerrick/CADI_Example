@@ -5,13 +5,15 @@ VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CADI_Example.Service", "src\CADI_Example.Service\CADI_Example.Service.csproj", "{5E107E13-7B38-4490-87FF-40D9072E3E27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CADI_Example.Application", "src\CADI_Example.Application\CADI_Example.Application.csproj", "{86E1C8D8-4632-4264-92C0-8639F8D17EF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CADI_Example.Application", "src\CADI_Example.Application\CADI_Example.Application.csproj", "{86E1C8D8-4632-4264-92C0-8639F8D17EF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CADI_Example.Domain", "src\CADI_Example.Domain\CADI_Example.Domain.csproj", "{D5D0985D-0080-4DA5-954D-35EE5DE1F6AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CADI_Example.Domain", "src\CADI_Example.Domain\CADI_Example.Domain.csproj", "{D5D0985D-0080-4DA5-954D-35EE5DE1F6AE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{BB9B8403-D570-405D-9BC2-F48F97FC7D80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonFunctionsLib", "src\CommonFunctionsLib\CommonFunctionsLib.csproj", "{3B9CC041-1E21-4982-890E-F841CADB5EFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonFunctionsLib", "src\CommonFunctionsLib\CommonFunctionsLib.csproj", "{3B9CC041-1E21-4982-890E-F841CADB5EFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CADI_Example.Infrastructure", "src\CADI_Example.Infrastructure\CADI_Example.Infrastructure.csproj", "{A78CA5EE-A3FC-4D5E-A43F-DFC17016B609}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{3B9CC041-1E21-4982-890E-F841CADB5EFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B9CC041-1E21-4982-890E-F841CADB5EFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B9CC041-1E21-4982-890E-F841CADB5EFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A78CA5EE-A3FC-4D5E-A43F-DFC17016B609}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A78CA5EE-A3FC-4D5E-A43F-DFC17016B609}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A78CA5EE-A3FC-4D5E-A43F-DFC17016B609}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A78CA5EE-A3FC-4D5E-A43F-DFC17016B609}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

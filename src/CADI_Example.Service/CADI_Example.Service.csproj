@@ -25,6 +25,7 @@
   <ItemGroup>
     <ProjectReference Include="..\CADI_Example.Application\CADI_Example.Application.csproj" />
     <ProjectReference Include="..\CADI_Example.Domain\CADI_Example.Domain.csproj" />
+    <ProjectReference Include="..\CADI_Example.Infrastructure\CADI_Example.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

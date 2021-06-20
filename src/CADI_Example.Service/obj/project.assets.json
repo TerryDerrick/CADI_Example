@@ -1262,6 +1262,31 @@
         "runtime": {
           "bin/placeholder/CADI_Example.Domain.dll": {}
         }
+      },
+      "CADI_Example.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "CommonFunctionsLib": "1.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CADI_Example.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CADI_Example.Infrastructure.dll": {}
+        }
+      },
+      "CommonFunctionsLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/CommonFunctionsLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommonFunctionsLib.dll": {}
+        }
       }
     }
   },
@@ -4543,12 +4568,23 @@
       "type": "project",
       "path": "../CADI_Example.Domain/CADI_Example.Domain.csproj",
       "msbuildProject": "../CADI_Example.Domain/CADI_Example.Domain.csproj"
+    },
+    "CADI_Example.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../CADI_Example.Infrastructure/CADI_Example.Infrastructure.csproj",
+      "msbuildProject": "../CADI_Example.Infrastructure/CADI_Example.Infrastructure.csproj"
+    },
+    "CommonFunctionsLib/1.0.0": {
+      "type": "project",
+      "path": "../CommonFunctionsLib/CommonFunctionsLib.csproj",
+      "msbuildProject": "../CommonFunctionsLib/CommonFunctionsLib.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "CADI_Example.Application >= 1.0.0",
       "CADI_Example.Domain >= 1.0.0",
+      "CADI_Example.Infrastructure >= 1.0.0",
       "Microsoft.Extensions.Hosting >= 5.0.0",
       "Microsoft.Extensions.Hosting.Abstractions >= 5.0.0",
       "Microsoft.Extensions.Hosting.WindowsServices >= 5.0.1",
@@ -4599,6 +4635,9 @@
             },
             "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Domain\\CADI_Example.Domain.csproj": {
               "projectPath": "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Domain\\CADI_Example.Domain.csproj"
+            },
+            "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Infrastructure\\CADI_Example.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Infrastructure\\CADI_Example.Infrastructure.csproj"
             }
           }
         }

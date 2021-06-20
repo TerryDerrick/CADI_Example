@@ -9,5 +9,9 @@
     /// </summary>
     interface ICommonFunctions
     {
+
+        int Subtract(int a, int b);
+
+        int Addition(int a, int b);
     }
 }
