@@ -30,7 +30,7 @@ namespace CADI_Example.Infrastructure
             }
 
             services.AddSingleton<IDateTime, MachineDateTime>();
-            services.AddSingleton<CommonFunctions, CommonFunctions>();
+            services.AddSingleton<ICommonFunctions, CommonFunctions>();
 
             return services;
         }

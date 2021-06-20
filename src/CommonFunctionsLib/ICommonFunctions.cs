@@ -7,7 +7,7 @@
     /// <summary>
     /// Common Functions Interface.
     /// </summary>
-    interface ICommonFunctions
+    public interface ICommonFunctions
     {
 
         int Subtract(int a, int b);
