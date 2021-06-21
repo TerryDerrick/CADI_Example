@@ -24,7 +24,7 @@
         /// <summary>
         /// Initializes a new instance of the <see cref="ApplicationWorker"/> class.
         /// </summary>
-        /// <param name="options">Ioptions</param>
+        /// <param name="options">Ioptions.</param>
         /// <param name="serviceScopeFactory">Dependency Injection Service Scope.</param>
         public ApplicationWorker(IOptions<CommonOptions> options, IServiceScopeFactory serviceScopeFactory)
         {
@@ -39,7 +39,6 @@
             commonOptions = options.Value;
 
             commonFunctions = serviceScope.ServiceProvider.GetRequiredService<ICommonFunctions>();
-
         }
 
         /// <inheritdoc/>
@@ -47,7 +46,7 @@
         {
             try
             {
-
+                // Do work here.
             }
             catch (Exception)
             {

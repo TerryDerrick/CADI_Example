@@ -23,7 +23,6 @@
         /// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
         public static async Task Main(string[] args)
         {
-
 #if DEBUG
             Console.WriteLine("Debug mode Enabled. Starting Serilog Self Diagnostic");
             Serilog.Debugging.SelfLog.Enable(msg => Console.WriteLine(msg));
