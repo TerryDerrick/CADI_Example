@@ -20,39 +20,28 @@ namespace CommonFunctionsLib.Tests
         }
 
         [Theory]
-        [InlineData(1,1,2)]
-        public void AdditionTests(int value1, int value2 , int expectedvalue)
+        [InlineData(1, 1, 2)]
+        public void AdditionTests(int value1, int value2, int expectedvalue)
         {
             ICommonFunctions commonFunctions = _serviceProvider.GetRequiredService<ICommonFunctions>();
 
             int output = commonFunctions.Addition(value1, value2);
 
-            if (output == expectedvalue)
-            {
-                Assert.Equal(value1, value2);
-            }
-            else
-            {
-                Assert.NotEqual(value1, value2);
-            }
+            Assert.Equal(output, expectedvalue);
+
         }
 
         [Theory]
         [InlineData(2, 1, 1)]
+        [InlineData(10, 5, 5)]
         public void SubtractionTests(int value1, int value2, int expectedvalue)
         {
             ICommonFunctions commonFunctions = _serviceProvider.GetRequiredService<ICommonFunctions>();
 
             int output = commonFunctions.Subtract(value1, value2);
 
-            if (output == expectedvalue)
-            {
-                Assert.Equal(value1, value2);
-            }
-            else
-            {
-                Assert.NotEqual(value1, value2);
-            }
+            Assert.Equal(output, expectedvalue);
+
         }
     }
 
