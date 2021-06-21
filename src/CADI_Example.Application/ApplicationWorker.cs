@@ -1,10 +1,15 @@
 ﻿namespace CADI_Example.Application
 {
     using System;
+    using System.Collections.Generic;
+    using System.Linq;
     using System.Threading;
     using System.Threading.Tasks;
+    using CADI_Example.Domain.Entities;
     using CADI_Example.Domain.Model;
+    using CADI_Example.Persistance;
     using CommonFunctionsLib;
+    using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
     using Microsoft.Extensions.Hosting.Internal;
@@ -20,6 +25,7 @@
         private readonly IServiceScope serviceScope;
         private readonly IHostApplicationLifetime applicationLifetime;
         private readonly ICommonFunctions commonFunctions;
+        private readonly SystemDbContext systemDB;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ApplicationWorker"/> class.
@@ -38,7 +44,17 @@
 
             commonOptions = options.Value;
 
+            // Configure Application Lifecycle
+            applicationLifetime = serviceScope.ServiceProvider.GetRequiredService<IHostApplicationLifetime>();
+
             commonFunctions = serviceScope.ServiceProvider.GetRequiredService<ICommonFunctions>();
+
+            systemDB = serviceScope.ServiceProvider.GetRequiredService<SystemDbContext>();
+
+            systemDB.Database.EnsureCreated();
+            //systemDB.Database.Migrate();
+
+
         }
 
         /// <inheritdoc/>
@@ -47,6 +63,13 @@
             try
             {
                 // Do work here.
+
+                List<TestData> data = systemDB.TestData.ToList();
+
+                foreach (TestData item in data)
+                {
+                    Console.WriteLine($"TestDataID {item.TestDataId} Value1 {item.Value1}, Value2 {item.Value2}, Expected {item.ExpectedValue}");
+                }
             }
             catch (Exception)
             {

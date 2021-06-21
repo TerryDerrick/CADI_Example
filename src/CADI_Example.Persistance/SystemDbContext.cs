@@ -7,8 +7,13 @@ using System.Text;
 
 namespace CADI_Example.Persistance
 {
-    class SystemDbContext : ISystemDbContext
+    public class SystemDbContext : DbContext, ISystemDbContext
     {
+        public SystemDbContext(DbContextOptions<SystemDbContext> options)
+             : base(options)
+        {
+        }
+
         /// <inheritdoc/>
         public virtual DbSet<TestData> TestData { get; set; }
     }

@@ -1,6 +1,7 @@
 ﻿namespace CADI_Example.Persistence
 {
     using System;
+    using CADI_Example.Persistance;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
@@ -30,6 +31,10 @@
             }
 
             //services.AddDbContext<SystemDbContext>(options => options.UseSqlServer(configuration.GetConnectionString(connectionStringName)));
+
+            // no appsettings yet.
+            //services.AddDbContext<SystemDbContext>(options => options.UseInMemoryDatabase(configuration.GetConnectionString(connectionStringName)));
+            services.AddDbContext<SystemDbContext>(options => options.UseInMemoryDatabase("TempDatabase"));
 
             //services.AddScoped<ISystemDbContext>(provider => provider.GetService<SystemDbContext>());
 

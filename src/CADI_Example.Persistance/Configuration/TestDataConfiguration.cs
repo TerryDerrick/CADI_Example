@@ -54,7 +54,7 @@ namespace CADI_Example.Persistance.Configuration
 
             builder.HasData(new List<TestData>
             {
-                new TestData { },
+                new TestData { TestDataId = 1, TestType = "ADDITION", Value1 = "2", Value2 = "2" , ExpectedValue = "4", TestResult = string.Empty },
             });
         }
     }
