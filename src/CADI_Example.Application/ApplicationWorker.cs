@@ -54,7 +54,21 @@
             systemDB.Database.EnsureCreated();
             //systemDB.Database.Migrate();
 
+#if DEBUG
+            AddTestDataToInMemoryDB(systemDB);
+#endif
+        }
 
+        private void AddTestDataToInMemoryDB(SystemDbContext systemDB)
+        {
+            List<TestData> dataseeding = new List<TestData>
+            {
+                new TestData() { TestType = "ADDITION", Value1 = "2", Value2 = "2" , ExpectedValue = "4", TestResult = string.Empty },
+            };
+
+            
+            systemDB.TestData.UpdateRange(dataseeding);
+            systemDB.SaveChanges();
         }
 
         /// <inheritdoc/>
