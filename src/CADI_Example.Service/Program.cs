@@ -5,6 +5,7 @@
     using CADI_Example.Application;
     using CADI_Example.Domain.Model;
     using CADI_Example.Infrastructure;
+    using CADI_Example.Persistence;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
@@ -78,6 +79,7 @@
                 {
                      svc.Configure<CommonOptions>(ctx.Configuration.GetSection("CommonOptions"));
                      svc.AddInfrastructureServices(ctx.Configuration);
+                     svc.AddPersistanceServices(ctx.Configuration);
                      svc.AddHostedService<ApplicationWorker>();
                 });
     }

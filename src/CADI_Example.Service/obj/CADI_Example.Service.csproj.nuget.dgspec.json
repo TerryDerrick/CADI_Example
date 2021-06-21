@@ -227,6 +227,94 @@
         }
       }
     },
+    "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Persistance\\CADI_Example.Persistance.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Persistance\\CADI_Example.Persistance.csproj",
+        "projectName": "CADI_Example.Persistance",
+        "projectPath": "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Persistance\\CADI_Example.Persistance.csproj",
+        "packagesPath": "C:\\Users\\Fox\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Persistance\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Fox\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/bluestardirectqld/_packaging/directqld/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Domain\\CADI_Example.Domain.csproj": {
+                "projectPath": "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Domain\\CADI_Example.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Service\\CADI_Example.Service.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -263,6 +351,9 @@
               },
               "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Infrastructure\\CADI_Example.Infrastructure.csproj": {
                 "projectPath": "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Infrastructure\\CADI_Example.Infrastructure.csproj"
+              },
+              "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Persistance\\CADI_Example.Persistance.csproj": {
+                "projectPath": "C:\\Users\\Fox\\source\\repos\\TerryDerrick\\CADI_Example\\src\\CADI_Example.Persistance\\CADI_Example.Persistance.csproj"
               }
             }
           }
